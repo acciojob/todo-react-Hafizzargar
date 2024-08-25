@@ -45,13 +45,13 @@ const App = () => {
      
         {/* Do not remove the main div */}
 
-        {
+        <ul>{
           arr.map((e,i)=>{
             // console.log(e,i);
-             return <div key={i}  className="a11">{e.text}<button onClick={()=>del(e.id) }>Delete</button></div>
+             return <li key={i}  className="a11">{e.text}<button onClick={()=>del(e.id) }>Delete</button></li>
           })
         }
-       
+       </ul>
     </div>
   )
 }
